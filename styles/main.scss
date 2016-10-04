@@ -1,0 +1,31 @@
+@import "header";
+@import "mainsection";
+@import "contabs";
+
+body {
+  color: #47A3DA;
+  text-align: center;
+  width: 100%;
+
+
+    footer {
+
+      a {
+        text-decoration: none;
+        color: gray;
+      }
+    }
+  }
+@media(min-width: 510px) {
+  footer {
+    margin-top: 3rem;
+  }
+}
+@media(min-width: 840px) {
+  body {
+    text-align: left;
+  }
+  footer {
+    text-align: center;
+  }
+}

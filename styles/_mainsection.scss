@@ -1,0 +1,55 @@
+main {
+width: 100%;
+
+.bigBlocks {
+  margin: 0 auto;
+  background-color: #47A3DA;
+  width: 75%;
+  padding: 3rem;
+  font-size: 60px;
+
+    i {
+      background-color: white;
+      border-radius: 50%;
+      padding: 2rem;
+      color: #47A3DA;
+    }
+  }
+
+    h3 {
+      color: #47A3DA;
+
+}
+  a {
+    text-decoration: none;
+  }
+}
+@media(min-width: 510px) {
+main {
+  .bigBlocks {
+    display: inline-block;
+    width: 30%;
+    margin: 0 4rem 4rem 0;
+    float: left;
+  }
+  .fullContent::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+}
+@media(min-width: 840px) {
+  .fullContent {
+    width: 25%;
+    display: inline-block;
+    padding: 1rem 2rem;
+
+    .bigBlocks {
+      width: 70%;
+      margin:0 auto;
+      text-align: center;
+
+    }
+  }
+}

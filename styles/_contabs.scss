@@ -1,0 +1,67 @@
+.pageSwitch {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 5rem 0
+}
+.pageSwitch::after {
+  content:'';
+  display: block;
+  clear:both;
+}
+
+.conTabs {
+  border: 1px solid gray;
+  width: 19.5%;
+  display: inline-block;
+  color: gray;
+  float:left;
+  font-size: 20px;
+  padding: 0.6rem 0rem;
+
+    span {
+      display: none;
+    }
+  }
+
+    .pageSwitch:hover {
+        border-bottom: 1px solid #47A3DA;
+    }
+
+    .conTabs:hover {
+      color: #47A3DA;
+      border-color: #47A3DA;
+      border-top: 2px solid;
+      border-right:1px solid;
+      border-left: 1px solid;
+      border-bottom: white;
+      background-color: white;
+
+    }
+
+
+
+@media(min-width: 510px) {
+  .pageSwitch::after {
+    display: none;
+  }
+  .pageSwitch {
+    padding-bottom: 0rem;
+    border-bottom: 2px solid #47A3DA;
+  }
+
+  .conTabs {
+    float: none;
+    width: 11%;
+  }
+}
+@media(min-width: 840px) {
+  .pageSwitch {
+    text-align: center;
+  }
+  .conTabs {
+    
+    span {
+      display: inline;
+    }
+  }
+}

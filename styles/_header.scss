@@ -1,0 +1,39 @@
+header {
+  margin: 0 auto;
+  width: 60%;
+  h3 {
+    font-size: 20px;
+  }
+  .navCons {
+    display: inline-block;
+    border: 3px solid #47A3DA;
+    border-radius: 50%;
+    padding: 0 3px;
+  }
+
+}
+@media(min-width: 840px) {
+
+  header {
+    width: 100%;
+    margin: 2rem 2rem;
+    padding-right: 100%;
+
+    h1 {
+      display: inline-block;
+    }
+  .navTop {
+    float: right;
+    width: 30%;
+
+    .navCons {
+      padding: 0.7rem 0.9rem;
+    }
+  }
+  }
+  header::after {
+    content:'';
+    display: block;
+    clear:both;
+  }
+}
